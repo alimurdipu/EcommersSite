@@ -7,61 +7,826 @@
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
-    <main class="w-full">
-      <!-- top header -->
-      <div
-        class="lg:w-full md:w-[768px] md:py-3 flex justify-around items-center bg-black"
-      >
-        <div class=""></div>
-        <div class="flex justify-center items-center gap-2">
-          <h2 class="text-white">
-            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-          </h2>
-          <button class="text-white underline">ShopNow</button>
-        </div>
-        <div>
-          <select class="bg-black text-white outline-none" name="" id="">
-            <option value="english">English</option>
-            <option value="bangla">Bangla</option>
-          </select>
-        </div>
+    <!-- top header -->
+    <div
+      class="lg:w-full md:w-[768px] md:py-3 flex justify-around items-center bg-black"
+    >
+      <div class=""></div>
+      <div class="flex justify-center items-center gap-2">
+        <h2 class="text-white">
+          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+        </h2>
+        <button class="text-white underline">ShopNow</button>
       </div>
-      <!-- navbar header -->
-      <div
-        class="md:flex lg:gap-4 md:justify-around justify-center w-full items-center pt-4 pb-2 lg:px-4"
-      >
-        <div class="text-center">
-          <h2 class="text-xl font-bold">Exclusive</h2>
+      <div>
+        <select class="bg-black text-white outline-none" name="" id="">
+          <option value="english">English</option>
+          <option value="bangla">Bangla</option>
+        </select>
+      </div>
+    </div>
+    <!-- navbar header -->
+    <div
+      class="md:flex lg:gap-4 md:justify-around justify-center w-full items-center pt-4 pb-2 lg:px-4 border-b"
+    >
+      <div class="text-center">
+        <h2 class="text-xl font-bold">Exclusive</h2>
+      </div>
+      <div class="flex gap-6 justify-center font-bold py-4">
+        <a href="">Home</a>
+        <a href="">Contact</a>
+        <a href="">About</a>
+        <a href="">Sign Up</a>
+      </div>
+      <div class="flex items-center justify-center">
+        <div class="flex">
+          <input
+            class="lg:w-72 md:w-56 w-56 bg-gray-100 rounded-md md:p-2 p-1 outline-none relative"
+            type="text"
+            placeholder="What are you looking for?"
+            name=""
+            id=""
+          />
+          <img
+            class="absolute lg:right-[170px] md:right-[90px] md:top-[82px] right-[90px] top-[202px]"
+            src="/assets/search.svg"
+            alt=""
+          />
         </div>
-        <div
-          class="flex gap-6 justify-center font-bold py-4"
-        >
-          <a href="">Home</a>
-          <a href="">Contact</a>
-          <a href="">About</a>
-          <a href="">Sign Up</a>
+        <img src="/assets/Wishlist.svg" alt="" />
+        <img src="/assets/Cart1withbuy.svg" alt="" />
+      </div>
+    </div>
+    <main class="w-10/12 mx-auto">
+      <div class="w-full"></div>
+      <!-- banner section -->
+      <div class="md:flex justify-center md:gap-5 lg:gap-10 p-6">
+        <div class="">
+          <ul class="w-full h-full space-y-4">
+            <li class="flex gap-20 items-center">
+              <span class="w-36">Woman’s Fashion</span>
+              <img src="/assets/rightarrow.svg" alt="" />
+            </li>
+            <li class="flex gap-[114px] items-center">
+              Men’s Fashion
+              <img src="/assets/rightarrow.svg" alt="" />
+            </li>
+            <li>Electronics</li>
+            <li>Home & Lifestyle</li>
+            <li>Medicine</li>
+            <li>Sports & Outdoor</li>
+            <li>Baby’s & Toys</li>
+            <li>Groceries & Pets</li>
+            <li>Health & Beauty</li>
+          </ul>
         </div>
-        <div
-          class="flex items-center justify-center"
-        >
-          <div class="flex">
-            <input
-              class="lg:w-72 md:w-56 w-56 bg-gray-100 rounded-md md:p-2 p-1 outline-none relative"
-              type="text"
-              placeholder="What are you looking for?"
-              name=""
-              id=""
-            />
+        <div class="bg-black py-2 lg:px-8 px-10">
+          <div class="flex justify-center items-center">
+            <div class="">
+              <div class="flex items-center gap-4">
+                <img class="w-10 h-10" src="/assets/apple.svg" alt="" />
+                <p class="text-white">iPhone 14 Series</p>
+              </div>
+              <div class="py-4">
+                <h2 class="text-white lg:text-3xl md:text-lg font-bold">
+                  Up to 10% off Voucher
+                </h2>
+              </div>
+              <div class="flex items-center gap-2">
+                <p class="text-white border-b-2 pb-1">Shop Now</p>
+                <img src="/assets/rightarow1.svg" alt="" />
+              </div>
+            </div>
             <img
-              class="absolute lg:right-[170px] md:right-[90px] md:top-[82px] right-[90px] top-[202px]"
-              src="/assets/search.svg"
+              class="lg:w-full lg:h-full w-40 h-40"
+              src="/assets/applephn.svg"
               alt=""
             />
           </div>
-          <img src="/assets/Wishlist.svg" alt="" />
-          <img src="/assets/Cart1withbuy.svg" alt="" />
+          <div class="flex justify-center gap-2">
+            <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+            <div class="w-3 h-3 bg-red-500 border-2 rounded-full"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+            <div class="w-3 h-3 bg-gray-300 rounded-full"></div>
+          </div>
         </div>
       </div>
+      <!-- banner section end -->
+      <!-- add to cart section -->
+      <div class="pt-20">
+        <div class="md:flex space-y-4 justify-between items-center">
+          <div class="space-y-2">
+            <div class="flex gap-4">
+              <div class="w-4 h-8 bg-[#DB4444] rounded-sm pl-4"></div>
+              <p class="text-[#DB4444] font-bold text-xl">Today's</p>
+            </div>
+            <h2 class="text-3xl font-bold">Flash Sales</h2>
+          </div>
+          <div class="flex items-end gap-6">
+            <div>
+              <p class="text-[12px] font-bold">Days</p>
+              <div class="flex gap-4 items-center">
+                <h2 class="text-2xl font-bold">03</h2>
+                <p class="text-2xl font-bold text-[#DB4444]">:</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-[12px] font-bold">Hours</p>
+              <div class="flex gap-4 items-center">
+                <h2 class="text-2xl font-bold">23</h2>
+                <p class="text-2xl font-bold text-[#DB4444]">:</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-[12px] font-bold">Minutes</p>
+              <div class="flex gap-4 items-center">
+                <h2 class="text-2xl font-bold">19</h2>
+                <p class="text-2xl font-bold text-[#DB4444]">:</p>
+              </div>
+            </div>
+            <div>
+              <p class="text-[12px] font-bold">Seconds</p>
+              <div class="flex gap-4 items-center">
+                <h2 class="text-2xl font-bold">56</h2>
+              </div>
+            </div>
+          </div>
+          <div class="flex gap-2">
+            <button><img src="/assets/FillWithLeftArrow.svg" alt="" /></button>
+            <button><img src="/assets/FillwithRightArrow.svg" alt="" /></button>
+          </div>
+        </div>
+      </div>
+      <!-- add to cart section -->
+      <!-- card1 -->
+      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-10">
+        <div class="">
+          <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+            <div class="flex items-center justify-center">
+              <img class="pt-16" src="/assets/joystick.svg" alt="" />
+            </div>
+            <div
+              class="absolute top-4 left-2 px-2 bg-[#DB4444] w-14 rounded-sm"
+            >
+              <p class="text-white">-40%</p>
+            </div>
+            <div class="absolute top-4 right-2 gap-2 flex flex-col">
+              <img src="/assets/FillHeart.svg" alt="" />
+              <img src="/assets/FillEye.svg" alt="" />
+            </div>
+          </div>
+          <div class="pt-4">
+            <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
+            <div class="flex gap-4">
+              <p class="text-[#DB4444]">$120</p>
+              <p class="text-[#7D8184]">$160</p>
+            </div>
+            <div class="flex">
+              <img src="/assets/Fivestar.svg" alt="" />
+              <p class="text-[#7D8184]">(88)</p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-[#F5F5F5] w-60 h-64 relative">
+            <div class="flex items-center justify-center">
+              <img class="pt-20" src="/assets/keyboard.svg" alt="" />
+            </div>
+            <div
+              class="absolute top-4 left-2 px-2 bg-[#DB4444] w-14 rounded-sm"
+            >
+              <p class="text-white">-35%</p>
+            </div>
+            <div class="absolute top-4 right-2 gap-2 flex flex-col">
+              <img src="/assets/FillHeart.svg" alt="" />
+              <img src="/assets/FillEye.svg" alt="" />
+            </div>
+            <div class="bg-black py-1 rounded-b-sm absolute w-full -bottom-5">
+              <p class="text-white text-center">Add To Cart</p>
+            </div>
+          </div>
+          <div class="pt-9">
+            <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
+            <div class="flex gap-4">
+              <p class="text-[#DB4444]">$960</p>
+              <p class="text-[#7D8184]">$1160</p>
+            </div>
+            <div class="flex">
+              <img src="/assets/FourStar.svg" alt="" />
+              <p class="text-[#7D8184]">(75)</p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+            <div class="flex items-center justify-center">
+              <img class="pt-16" src="/assets/monitor.svg" alt="" />
+            </div>
+            <div
+              class="absolute top-4 left-2 px-2 bg-[#DB4444] w-14 rounded-sm"
+            >
+              <p class="text-white">-30%</p>
+            </div>
+            <div class="absolute top-4 right-2 gap-2 flex flex-col">
+              <img src="/assets/FillHeart.svg" alt="" />
+              <img src="/assets/FillEye.svg" alt="" />
+            </div>
+          </div>
+          <div class="pt-4">
+            <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
+            <div class="flex gap-4">
+              <p class="text-[#DB4444]">$370</p>
+              <p class="text-[#7D8184]">$400</p>
+            </div>
+            <div class="flex">
+              <img src="/assets/Fivestar.svg" alt="" />
+              <p class="text-[#7D8184]">(99)</p>
+            </div>
+          </div>
+        </div>
+        <div class="">
+          <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+            <div class="flex items-center justify-center">
+              <img class="pt-16" src="/assets/chair.svg" alt="" />
+            </div>
+            <div
+              class="absolute top-4 left-2 px-2 bg-[#DB4444] w-14 rounded-sm"
+            >
+              <p class="text-white">-25%</p>
+            </div>
+            <div class="absolute top-4 right-2 gap-2 flex flex-col">
+              <img src="/assets/FillHeart.svg" alt="" />
+              <img src="/assets/FillEye.svg" alt="" />
+            </div>
+          </div>
+          <div class="pt-4">
+            <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
+            <div class="flex gap-4">
+              <p class="text-[#DB4444]">$375</p>
+              <p class="text-[#7D8184]">$400</p>
+            </div>
+            <div class="flex">
+              <img src="/assets/FourHalfStar.svg" alt="" />
+              <p class="text-[#7D8184]">(99)</p>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card1 end -->
+      <!-- card2 -->
+      <div class="pt-20">
+        <div class="md:flex space-y-4 justify-between items-center">
+          <div class="space-y-2">
+            <div class="flex gap-4">
+              <div class="w-4 h-8 bg-[#DB4444] rounded-sm pl-4"></div>
+              <p class="text-[#DB4444] font-bold text-xl">Categories</p>
+            </div>
+            <h2 class="text-3xl font-bold">Browse By Category</h2>
+          </div>
+          <div class="flex gap-2">
+            <button><img src="/assets/FillWithLeftArrow.svg" alt="" /></button>
+            <button><img src="/assets/FillwithRightArrow.svg" alt="" /></button>
+          </div>
+        </div>
+        <div
+          class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-4 justify-center pt-6 border-b-2 pb-10"
+        >
+          <div
+            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white"
+          >
+            <img class="" src="/assets/CellPhone.svg" alt="" />
+            <p>Phones</p>
+          </div>
+          <div
+            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white"
+          >
+            <img src="/assets/Computer.svg" alt="" />
+            <p>Computer</p>
+          </div>
+          <div
+            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white"
+          >
+            <img src="/assets/SmartWatch.svg" alt="" />
+            <p>SmartWatch</p>
+          </div>
+          <div
+            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer bg-[#DB4444] text-white"
+          >
+            <img src="/assets/Camera.svg" alt="" />
+            <p>Camera</p>
+          </div>
+          <div
+            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white"
+          >
+            <img src="/assets/Headphone1.svg" alt="" />
+            <p>HeadPhones</p>
+          </div>
+          <div
+            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white"
+          >
+            <img src="/assets/Gamepad.svg" alt="" />
+            <p>Gaming</p>
+          </div>
+        </div>
+      </div>
+      <!-- card2 end -->
+      <!-- card3 -->
+      <div class="pt-10">
+        <div class="md:flex space-y-4 justify-between items-center">
+          <div class="space-y-2">
+            <div class="flex gap-4">
+              <div class="w-4 h-8 bg-[#DB4444] rounded-sm pl-4"></div>
+              <p class="text-[#DB4444] font-bold text-xl">This Month</p>
+            </div>
+            <h2 class="text-3xl font-bold">Best Selling Products</h2>
+          </div>
+          <div class="">
+            <button class="bg-[#DB4444] py-2 px-4 text-white rounded-md">
+              View All
+            </button>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-10">
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-60 relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-8" src="/assets/rainycoat.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">The north coat</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$260</p>
+                <p class="text-[#7D8184]">$360</p>
+              </div>
+              <div class="flex">
+                <img src="/assets/Fivestar.svg" alt="" />
+                <p class="text-[#7D8184]">(65)</p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-60 relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-8" src="/assets/gucciBag.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Gucci duffle bag</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$960</p>
+                <p class="text-[#7D8184]">$1160</p>
+              </div>
+              <div class="flex">
+                <img src="/assets/FourHalfStar.svg" alt="" />
+                <p class="text-[#7D8184]">(65)</p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-60 relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-8" src="/assets/speaker.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">RGB liquid CPU Cooler</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$160</p>
+                <p class="text-[#7D8184]">$170</p>
+              </div>
+              <div class="flex">
+                <img src="/assets/FourHalfStar.svg" alt="" />
+                <p class="text-[#7D8184]">(65)</p>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-60 relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-8" src="/assets/bookReck.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Small BookSelf</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$360</p>
+              </div>
+              <div class="flex">
+                <img src="/assets/Fivestar.svg" alt="" />
+                <p class="text-[#7D8184]">(65)</p>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- card3 end -->
+      <!-- jbl banner -->
+      <div class="pt-20">
+        <div class="md:flex justify-around items-center bg-black p-8">
+          <div class="space-y-10">
+            <p class="text-[#00FF66] font-bold">Categories</p>
+            <h2 class="text-white font-semibold md:text-5xl text-3xl">
+              Enhance Your <br />
+              <span class="">Music Experience</span>
+            </h2>
+            <div class="flex md:gap-4 gap-2">
+              <div
+                class="flex flex-col justify-center items-center md:w-16 md:h-16 w-14 h-14 bg-white rounded-full"
+              >
+                <p class="font-bold">23</p>
+                <p class="text-[12px]">Hours</p>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center md:w-16 md:h-16 w-14 h-14 bg-white rounded-full"
+              >
+                <p class="font-bold">05</p>
+                <p class="text-[12px]">Days</p>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center md:w-16 md:h-16 w-14 h-14 bg-white rounded-full"
+              >
+                <p class="font-bold">59</p>
+                <p class="text-[12px]">Minutes</p>
+              </div>
+              <div
+                class="flex flex-col justify-center items-center md:w-16 md:h-16 w-14 h-14 bg-white rounded-full"
+              >
+                <p class="font-bold">23</p>
+                <p class="text-[12px]">Seconds</p>
+              </div>
+            </div>
+            <button class="bg-[#00FF66] py-2 px-8 text-white rounded-md">
+              Buy Now!
+            </button>
+          </div>
+          <div>
+            <img src="/assets/jblbox.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <!-- jbl banner end -->
+      <!-- card4 -->
+      <div class="pt-20">
+        <div class="md:flex space-y-4 justify-between items-center">
+          <div class="space-y-2">
+            <div class="flex gap-4">
+              <div class="w-4 h-8 bg-[#DB4444] rounded-sm pl-4"></div>
+              <p class="text-[#DB4444] font-bold text-xl">Our Products</p>
+            </div>
+            <h2 class="text-3xl font-bold">Explore Our Products</h2>
+          </div>
+          <div class="flex gap-2">
+            <button><img src="/assets/FillWithLeftArrow.svg" alt="" /></button>
+            <button><img src="/assets/FillwithRightArrow.svg" alt="" /></button>
+          </div>
+        </div>
+        <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-10">
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-16" src="/assets/dogFood.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Breed Dry Dog Food</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$100</p>
+                <div class="flex">
+                  <img src="/assets/Fivestar.svg" alt="" />
+                  <p class="text-[#7D8184]">(35)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-64 relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-20" src="/assets/dslr.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+              <div class="bg-black py-1 rounded-b-sm absolute w-full -bottom-5">
+                <p class="text-white text-center">Add To Cart</p>
+              </div>
+            </div>
+            <div class="pt-9">
+              <h2 class="font-bold">CANON EOS DSLR Camera</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$360</p>
+                <div class="flex">
+                  <img src="/assets/FourStar.svg" alt="" />
+                  <p class="text-[#7D8184]">(75)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-16" src="/assets/laptop.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">ASUS FHD Gaming Laptop</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$700</p>
+                <div class="flex">
+                  <img src="/assets/Fivestar.svg" alt="" />
+                  <p class="text-[#7D8184]">(99)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="">
+            <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-16" src="/assets/creme.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Curology Product Set</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$500</p>
+                <div class="flex">
+                  <img src="/assets/FourHalfStar.svg" alt="" />
+                  <p class="text-[#7D8184]">(99)</p>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4">
+            <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-16" src="/assets/toyCar.svg" alt="" />
+              </div>
+              <div
+                class="absolute top-4 left-2 px-2 bg-[#00FF66] w-14 rounded-sm"
+              >
+                <p class="text-white">New</p>
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Kids Electric Car</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$960</p>
+                <div class="flex">
+                  <img src="/assets/FourHalfStar.svg" alt="" />
+                  <p class="text-[#7D8184]">(65)</p>
+                </div>
+              </div>
+              <div class="flex gap-1 pt-2">
+                <div
+                  class="w-3 h-3 bg-red-600 border border-black rounded-full"
+                ></div>
+                <div class="w-3 h-3 bg-[#DB4444] rounded-full"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4">
+            <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-16" src="/assets/boot.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Jr. Zoom Soccer Cleats</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$1160</p>
+                <div class="flex">
+                  <img src="/assets/FourHalfStar.svg" alt="" />
+                  <p class="text-[#7D8184]">(35)</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-1 pt-2">
+              <div
+                class="w-3 h-3 bg-yellow-300 border border-black rounded-full"
+              ></div>
+              <div class="w-3 h-3 bg-[#DB4444] rounded-full"></div>
+            </div>
+          </div>
+          <div class="pt-4">
+            <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-16" src="/assets/joystick2.svg" alt="" />
+              </div>
+              <div
+                class="absolute top-4 left-2 px-2 bg-[#00FF66] w-14 rounded-sm"
+              >
+                <p class="text-white">New</p>
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Kids Electric Car</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$660</p>
+                <div class="flex">
+                  <img src="/assets/FourHalfStar.svg" alt="" />
+                  <p class="text-[#7D8184]">(55)</p>
+                </div>
+              </div>
+              <div class="flex gap-1 pt-2">
+                <div
+                  class="w-3 h-3 bg-black border border-black rounded-full"
+                ></div>
+                <div class="w-3 h-3 bg-[#DB4444] rounded-full"></div>
+              </div>
+            </div>
+          </div>
+          <div class="pt-4">
+            <div class="bg-[#F5F5F5] w-60 h-[275px] relative">
+              <div class="flex items-center justify-center">
+                <img class="pt-16" src="/assets/jacket.svg" alt="" />
+              </div>
+              <div class="absolute top-4 right-2 gap-2 flex flex-col">
+                <img src="/assets/FillHeart.svg" alt="" />
+                <img src="/assets/FillEye.svg" alt="" />
+              </div>
+            </div>
+            <div class="pt-4">
+              <h2 class="font-bold">Quilted Satin Jacket</h2>
+              <div class="flex gap-4">
+                <p class="text-[#DB4444]">$660</p>
+                <div class="flex">
+                  <img src="/assets/FourHalfStar.svg" alt="" />
+                  <p class="text-[#7D8184]">(55)</p>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-1 pt-2">
+              <div
+                class="w-3 h-3 bg-black border border-black rounded-full"
+              ></div>
+              <div class="w-3 h-3 bg-[#DB4444] rounded-full"></div>
+            </div>
+          </div>
+        </div>
+        <div class="flex justify-center pt-10">
+          <button class="bg-[#DB4444] py-2 px-8 text-white rounded-md">
+            View All Products
+          </button>
+        </div>
+      </div>
+      <!-- card4 end -->
+      <!-- new arrival -->
+      <div class="pt-20">
+        <div class="md:flex space-y-4 justify-between items-center">
+          <div class="space-y-2">
+            <div class="flex gap-4">
+              <div class="w-4 h-8 bg-[#DB4444] rounded-sm pl-4"></div>
+              <p class="text-[#DB4444] font-bold text-xl">Featured</p>
+            </div>
+            <h2 class="text-3xl font-bold">New Arrival</h2>
+          </div>
+        </div>
+        <div class="lg:flex gap-4 pt-10">
+          <div class="relative">
+            <div class="bg-[#000000] rounded-md">
+              <div class="flex items-center justify-center">
+                <img class="p-2 pt-4 pb-0" src="/assets/pcforgame.svg" alt="" />
+              </div>
+            </div>
+            <div class="absolute bottom-8 left-8 space-y-2">
+              <h2 class="font-bold text-xl text-white">PlayStation 5</h2>
+              <p class="text-white text-sm">
+                Black and White version of the PS5 <br> coming out on sale.
+              </p>
+              <div>
+                <button class="text-white border-b pb-1">Shop Now</button>
+              </div>
+            </div>
+          </div>
+          <div class="flex flex-col gap-4 lg:pt-0 pt-4">
+            <div class="relative">
+              <div class="bg-[#000000] rounded-md">
+                <div class="flex items-center justify-center">
+                  <img class="" src="/assets/womanscollection.svg" alt="" />
+                </div>
+              </div>
+              <div class="absolute bottom-5 left-5 space-y-2">
+                <h2 class="font-bold text-xl text-white">Women’s Collections</h2>
+                <p class="text-white text-sm">
+                  Featured woman collections that <br> give you another vibe.
+                </p>
+                <div>
+                  <button class="text-white border-b pb-1">Shop Now</button>
+                </div>
+              </div>
+            </div>
+            <div class="flex gap-4">
+              <div class="relative">
+                <div class="bg-[#000000] rounded-md">
+                  <div class="flex items-center justify-center">
+                    <img class="p-2 pb-0 h-[227px]" src="/assets/speaker2.svg" alt="" />
+                  </div>
+                </div>
+                <div class="absolute bottom-5 left-5">
+                  <h2 class="font-bold text-xl text-white">Speakers</h2>
+                  <p class="text-white text-sm">
+                    Amazon wireless speakers
+                  </p>
+                  <div>
+                    <button class="text-white border-b pb-1">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+              <div class="relative">
+                <div class="bg-[#000000] rounded-md">
+                  <div class="flex items-center justify-center">
+                    <img class="p-2 pb-0 h-[227px]" src="/assets/sent.svg" alt="" />
+                  </div>
+                </div>
+                <div class="absolute bottom-5 left-5">
+                  <h2 class="font-bold text-xl text-white">Perfume</h2>
+                  <p class="text-white text-sm">
+                    GUCCI INTENSE OUD EDP
+                  </p>
+                  <div>
+                    <button class="text-white border-b pb-1">Shop Now</button>
+                  </div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <!-- new arrival end -->
+      <!-- facilities -->
+      <div class="pt-10">
+        <div class="md:flex gap-2 justify-around items-center">
+          <div class="flex flex-col justify-center items-center">
+            <img class="bg-black rounded-full border-8 border-[#7D8184]  p-2" src="/assets/truck.svg" alt="">
+            <h2 class="font-bold">FREE AND FAST DELIVERY</h2>
+            <p class="text-sm">Free delivery for all orders over $140</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img class="bg-black rounded-full border-8 border-[#7D8184]  p-2" src="/assets/headphone.svg" alt="">
+            <h2 class="font-bold">24/7 CUSTOMER SERVICE</h2>
+            <p class="text-sm">Friendly 24/7 customer support</p>
+          </div>
+          <div class="flex flex-col justify-center items-center">
+            <img class="bg-black rounded-full border-8 border-[#7D8184]  p-2" src="/assets/security.svg" alt="">
+            <h2 class="font-bold">MONEY BACK GUARANTEE</h2>
+            <p class="text-sm">We reurn money within 30 days</p>
+          </div>
+        </div>
+      </div>
+      <!-- facilities end -->
+      <!-- footer section -->
+      <div class="bg-black">
+        <div>
+          <h2>Exclusive</h2>
+          <p>Subscribe</p>
+          <p>Get 10% off your first order</p>
+          <input class="relative border p-2" placeholder="Enter your email" type="text">
+          <img class="absolute bg-red-700 left-20" src="/assets/telegram.svg" alt="">
+        </div>
+      </div>
+      <!-- footer section end -->
     </main>
   </body>
 </html>
