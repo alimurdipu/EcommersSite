@@ -172,7 +172,7 @@
       <!-- flash sales -->
       <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
         <div class="mx-auto">
-          <div class="bg-[#F5F5F5] w-60 h-[275px] relative cursor-pointer">
+          <div class="group bg-[#F5F5F5] w-60 h-64 relative cursor-pointer">
             <div class="flex items-center justify-center">
               <img class="pt-16" src="/assets/joystick.svg" alt="" />
             </div>
@@ -185,8 +185,11 @@
               <img src="/assets/FillHeart.svg" alt="" />
               <img src="/assets/FillEye.svg" alt="" />
             </div>
+            <button class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1">
+              <p class="text-white text-center">Add To Cart</p>
+            </button>
           </div>
-          <div class="pt-4">
+          <div class="pt-2">
             <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
             <div class="flex gap-4">
               <p class="text-[#DB4444]">$120</p>
@@ -199,7 +202,7 @@
           </div>
         </div>
         <div class="mx-auto">
-          <div class="bg-[#F5F5F5] w-60 h-64 relative cursor-pointer">
+          <div class="group bg-[#F5F5F5] w-60 h-64 relative cursor-pointer">
             <div class="flex items-center justify-center">
               <img class="pt-20" src="/assets/keyboard.svg" alt="" />
             </div>
@@ -212,12 +215,12 @@
               <img src="/assets/FillHeart.svg" alt="" />
               <img src="/assets/FillEye.svg" alt="" />
             </div>
-            <div class="bg-black py-1 rounded-b-sm absolute w-full -bottom-5">
+            <button class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1">
               <p class="text-white text-center">Add To Cart</p>
-            </div>
+            </button>
           </div>
-          <div class="pt-9">
-            <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
+          <div class="pt-2">
+            <h2 class="font-bold">AK-900 Wired Keyboard</h2>
             <div class="flex gap-4">
               <p class="text-[#DB4444]">$960</p>
               <p class="text-[#7D8184]">$1160</p>
@@ -229,7 +232,7 @@
           </div>
         </div>
         <div class="mx-auto">
-          <div class="bg-[#F5F5F5] w-60 h-[275px] relative cursor-pointer">
+          <div class="group bg-[#F5F5F5] w-60 h-64 relative cursor-pointer">
             <div class="flex items-center justify-center">
               <img class="pt-16" src="/assets/monitor.svg" alt="" />
             </div>
@@ -242,9 +245,12 @@
               <img src="/assets/FillHeart.svg" alt="" />
               <img src="/assets/FillEye.svg" alt="" />
             </div>
+            <button class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1">
+              <p class="text-white text-center">Add To Cart</p>
+            </button>
           </div>
-          <div class="pt-4">
-            <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
+          <div class="pt-2">
+            <h2 class="font-bold">IPS LCD Gaming Monitor</h2>
             <div class="flex gap-4">
               <p class="text-[#DB4444]">$370</p>
               <p class="text-[#7D8184]">$400</p>
@@ -256,7 +262,7 @@
           </div>
         </div>
         <div class="mx-auto">
-          <div class="bg-[#F5F5F5] w-60 h-[275px] relative cursor-pointer">
+          <div class="group bg-[#F5F5F5] w-60 h-64 relative cursor-pointer">
             <div class="flex items-center justify-center">
               <img class="pt-16" src="/assets/chair.svg" alt="" />
             </div>
@@ -269,9 +275,12 @@
               <img src="/assets/FillHeart.svg" alt="" />
               <img src="/assets/FillEye.svg" alt="" />
             </div>
+            <button class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1">
+              <p class="text-white text-center">Add To Cart</p>
+            </button>
           </div>
-          <div class="pt-4">
-            <h2 class="font-bold">HAVIT HV-G92 Gamepad</h2>
+          <div class="pt-2">
+            <h2 class="font-bold">S-Series Comfort Chair </h2>
             <div class="flex gap-4">
               <p class="text-[#DB4444]">$375</p>
               <p class="text-[#7D8184]">$400</p>
@@ -310,9 +319,10 @@
           class="grid lg:grid-cols-6 md:grid-cols-3 grid-cols-2 gap-4 justify-center pt-6 border-b-2 pb-10"
         >
           <div
-            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white mx-auto"
+            class="group border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white mx-auto"
           >
-            <img class="" src="/assets/CellPhone.svg" alt="" />
+            <img class="group-hover:hidden" src="/assets/CellPhone.svg" alt="" />
+            <img class="group-hover:block hidden" src="/assets/cellwhi.svg" alt="" />
             <i class="fa-light fa-mobile-screen-button"></i>
             <p>Phones</p>
           </div>
@@ -335,15 +345,16 @@
             <p>Camera</p>
           </div>
           <div
-            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white mx-auto"
+            class="group border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white mx-auto"
           >
-            <img src="/assets/Headphone1.svg" alt="" />
+            <img class="" src="/assets/Headphone1.svg" alt="" />
             <p>HeadPhones</p>
           </div>
           <div
-            class="border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white mx-auto"
+            class="group border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:bg-[#DB4444] hover:text-white mx-auto"
           >
-            <img src="/assets/Gamepad.svg" alt="" />
+            <img class="group-hover:hidden" src="/assets/Gamepad.svg" alt="" />
+            <img class="group-hover:block hidden" src="/assets/Gamepadwhi.svg" alt="" />
             <p>Gaming</p>
           </div>
         </div>
