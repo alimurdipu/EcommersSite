@@ -8,57 +8,65 @@
   </head>
   <body>
     <!-- top header -->
-    <div
-      class="lg:w-full md:w-[768px] md:py-3 flex justify-around items-center bg-black"
-    >
-      <div class=""></div>
-      <div class="flex justify-center items-center gap-2">
-        <h2 class="text-white">
-          Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
-        </h2>
-        <button class="text-white underline">ShopNow</button>
-      </div>
-      <div>
-        <select class="bg-black text-white outline-none" name="" id="">
-          <option value="english">English</option>
-          <option value="bangla">Bangla</option>
-        </select>
+    <div class="bg-black py-3">
+      <div class="flex justify-between items-center max-w-5xl mx-auto">
+        <div class="w-2/12 lg:block hidden"></div>
+        <div class="w-9/12 flex justify-center items-center gap-2">
+          <h2 class="text-white">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </h2>
+          <button class="text-white underline">ShopNow</button>
+        </div>
+        <div class="">
+          <select class="w-full bg-black text-white outline-none" name="" id="">
+            <option value="english">English</option>
+            <option value="bangla">Bangla</option>
+          </select>
+        </div>
       </div>
     </div>
-    <!-- navbar -->
-    <div
-      class="md:flex lg:gap-4 md:justify-around justify-center w-full items-center pt-4 pb-2 lg:px-4 border-b"
-    >
-      <div class="text-center">
-        <h2 class="text-xl font-bold">Exclusive</h2>
-      </div>
-      <div class="flex gap-6 justify-center py-4">
-        <a class="hover:underline" href="index.html">Home</a>
-        <a class="hover:underline" href="">Contact</a>
-        <a class="hover:underline" href="">About</a>
-        <a class="hover:underline" href="signup.html">Sign Up</a>
-      </div>
-      <div class="flex items-center justify-center">
-        <div class="flex">
-          <input
-            class="lg:w-72 md:w-56 w-56 bg-gray-100 rounded-md md:p-2 p-1 outline-none relative"
-            type="text"
-            placeholder="What are you looking for?"
-            name=""
-            id=""
-          />
-          <img
-            class="absolute lg:right-[170px] md:right-[90px] md:top-[82px] right-[90px] top-[202px]"
-            src="/assets/search.svg"
-            alt=""
-          />
+    <!-- navbar header -->
+    <div class="border-b">
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="flex md:flex-row flex-col justify-between items-center border-b"
+        >
+          <div class="md:w-2/12">
+            <h2 class="text-xl font-bold">Exclusive</h2>
+          </div>
+          <div class="md:w-5.5/12 flex flex-row gap-5 justify-center py-4">
+            <a class="hover:underline" href="index.html">Home</a>
+            <a class="hover:underline" href="">Contact</a>
+            <a class="hover:underline" href="">About</a>
+            <a class="hover:underline" href="signup.html">Sign Up</a>
+          </div>
+          <div class="md:w-4.5/12 flex items-center justify-between">
+            <div class="flex relative">
+              <input
+                class="lg:w-72 md:w-56 w-56 bg-gray-100 rounded-md md:p-2 p-1 outline-none"
+                type="text"
+                placeholder="What are you looking for?"
+                name=""
+                id=""
+              />
+              <img
+                class="absolute right-2 top-3"
+                src="/assets/search.svg"
+                alt=""
+              />
+            </div>
+            <a href="whishlist.html"
+              ><img src="/assets/Wishlist.svg" alt=""
+            /></a>
+            <a href="cart.html"
+              ><img src="/assets/Cart1withbuy.svg" alt=""
+            /></a>
+          </div>
         </div>
-        <img src="/assets/Wishlist.svg" alt="" />
-        <img src="/assets/Cart1withbuy.svg" alt="" />
       </div>
     </div>
     <!-- navbar end -->
-    <main class="w-10/12 mx-auto">
+    <main class="max-w-5xl mx-auto">
       <!-- section header -->
       <div class="pt-10">
         <div class="md:flex space-y-4 justify-between items-center">
@@ -279,24 +287,26 @@
       <!-- card2 end -->
     </main>
     <!-- footer section -->
-    <div class="items-center bg-black">
-      <div class="grid lg:grid-cols-10 md:grid-cols-6 gap-4 py-8 px-12">
-        <div class="relative space-y-4 col-span-2">
+    <div class="bg-black py-10">
+      <div
+        class="max-w-5xl mx-auto grid lg:grid-cols-10 md:grid-cols-6 grid-cols-2 md:justify-between gap-5"
+      >
+        <div class="relative space-y-4 col-span-2 mx-auto">
           <h2 class="text-white font-bold">Exclusive</h2>
           <p class="text-white">Subscribe</p>
           <p class="text-white">Get 10% off your first order</p>
           <input
-            class="border p-2 outline-none bg-black rounded-sm"
+            class="border p-2 outline-none bg-black rounded-sm text-white"
             placeholder="Enter your email"
             type="text"
           />
           <img
-            class="absolute lg:left-[168px] lg:bottom-[74px] md:left-40 md:bottom-4 left-40 bottom-2 rounded-lg"
+            class="absolute top-28 right-4"
             src="/assets/telegram.svg"
             alt=""
           />
         </div>
-        <div class="relative space-y-4 col-span-2">
+        <div class="space-y-4 col-span-2 md:mx-auto pl-16 md:pl-0">
           <h2 class="text-white font-bold">Support</h2>
           <p class="text-white">
             111 Bijoy sarani, Dhaka,<br />
@@ -305,7 +315,7 @@
           <p class="text-white">exclusive@gmail.com</p>
           <p class="text-white">+88015-88888-9999</p>
         </div>
-        <div class="relative space-y-4 col-span-2">
+        <div class="space-y-4 col-span-2 md:mx-auto pl-16 md:pl-0">
           <h2 class="text-white font-bold">Account</h2>
           <p class="text-white">My Account</p>
           <p class="text-white">Login / Register</p>
@@ -313,14 +323,14 @@
           <p class="text-white">Wishlist</p>
           <p class="text-white">Shop</p>
         </div>
-        <div class="relative space-y-4 col-span-2">
+        <div class="space-y-4 col-span-2 md:mx-auto pl-16 md:pl-0">
           <h2 class="text-white font-bold">Quick Link</h2>
           <p class="text-white">Privacy Policy</p>
           <p class="text-white">Terms Of Use</p>
           <p class="text-white">FAQ</p>
           <p class="text-white">Contact</p>
         </div>
-        <div class="relative space-y-4 col-span-2">
+        <div class="space-y-4 col-span-2 mx-auto">
           <h2 class="text-white font-bold">Download App</h2>
           <img src="/assets/qrcode.svg" alt="" />
           <div class="flex gap-6">
@@ -331,7 +341,7 @@
           </div>
         </div>
       </div>
-      <div class="text-[#7D8184] text-center pb-2">
+      <div class="text-[#7D8184] text-center pt-10">
         @Copyright Rimel 2022. All right reserved
       </div>
     </div>
