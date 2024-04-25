@@ -1,0 +1,207 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>CheckOut</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+  </head>
+  <body>
+    <!-- top header -->
+    <div class="bg-black py-3">
+      <div class="flex justify-between items-center max-w-5xl mx-auto">
+        <div class="w-2/12 lg:block hidden"></div>
+        <div class="w-9/12 flex justify-center items-center gap-2">
+          <h2 class="text-white">
+            Summer Sale For All Swim Suits And Free Express Delivery - OFF 50%!
+          </h2>
+          <button class="text-white underline">ShopNow</button>
+        </div>
+        <div class="">
+          <select class="w-full bg-black text-white outline-none" name="" id="">
+            <option value="english">English</option>
+            <option value="bangla">Bangla</option>
+          </select>
+        </div>
+      </div>
+    </div>
+    <!-- navbar header -->
+      <div class="max-w-5xl mx-auto">
+        <div
+          class="flex md:flex-row flex-col justify-between items-center -b"
+        >
+          <div class="md:w-2/12">
+            <h2 class="text-xl font-bold">Exclusive</h2>
+          </div>
+          <div class="md:w-5.5/12 flex flex-row gap-5 justify-center py-4">
+            <a class="hover:underline" href="index.html">Home</a>
+            <a class="hover:underline" href="">Contact</a>
+            <a class="hover:underline" href="">About</a>
+            <a class="hover:underline" href="signup.html">Sign Up</a>
+          </div>
+          <div class="md:w-4.5/12 flex items-center justify-between">
+            <div class="flex relative">
+              <input
+                class="lg:w-72 md:w-56 w-56 bg-gray-100 rounded-md md:p-2 p-1 outline-none"
+                type="text"
+                placeholder="What are you looking for?"
+                name=""
+                id=""
+              />
+              <img
+                class="absolute right-2 top-3"
+                src="/assets/search.svg"
+                alt=""
+              />
+            </div>
+            <a href="whishlist.html"
+              ><img src="/assets/Wishlist.svg" alt=""
+            /></a>
+            <a href="cart.html"
+              ><img src="/assets/Cart1withbuy.svg" alt=""
+            /></a>
+          </div>
+        </div>
+      </div>
+    <!-- navbar end -->
+    <main class="max-w-5xl mx-auto">
+      <!-- path -->
+      <div class="py-10">
+        <p>
+            Home / <span class="font-bold">Contact</span>
+        </p>
+      </div>
+      <!-- path end -->
+      <!-- input section -->
+      <div class="flex justify-between py-20">
+        <div class="w-72 shadow-sm">
+            <div class="space-y-4 border-b-2 pb-10">
+                <div class="flex flex-row gap-3 items-center">
+                    <div class="p-2 bg-[#DB4444] rounded-full">
+                        <img class="" src="assets/telephone.svg" alt="">
+                    </div>
+                    <p class="font-bold">Call To Us</p>
+                </div>
+                <div class="space-y-2">
+                    <p>We are available 24/7, 7 days a week.</p>
+                    <p>Phone: +8801611112222</p>
+                </div>
+              </div>
+              <div class="space-y-4 pt-10">
+                <div class="flex flex-row gap-3 items-center">
+                    <div class="p-2 bg-[#DB4444] rounded-full">
+                        <img class="" src="assets/message.svg" alt="">
+                    </div>
+                    <p class="font-bold">Write To US</p>
+                </div>
+                <div class="space-y-2">
+                    <p>Fill out our form and we will contact you within 24 hours.</p>
+                    <p>Emails: customer@exclusive.com</p>
+                    <p>Emails: support@exclusive.com</p>
+                </div>
+              </div>
+        </div>
+        <div class="space-y-4 px-10 shadow-sm">
+          <div class="flex flex-row gap-4">
+            <div class="w-full ">
+              <input
+                class="w-full bg-[#F5F5F5] text-[#7D8184] outline-none px-2 py-1"
+                type="text"
+                name=""
+                id=""
+                placeholder="Your Name *"
+              />
+            </div>
+            <div class="w-full ">
+              <input
+                class="w-full bg-[#F5F5F5] text-[#7D8184] outline-none px-2 py-1"
+                type="text"
+                name=""
+                id=""
+                placeholder="Your Email *"
+              />
+            </div>
+            <div class="w-full ">
+                <input
+                  class="w-full bg-[#F5F5F5] text-[#7D8184] outline-none px-2 py-1"
+                  type="text"
+                  name=""
+                  id=""
+                  placeholder="Your Phone *"
+                />
+              </div>
+            </div>
+            <div>
+              <textarea class="bg-[#F5F5F5] w-full p-2" placeholder="Your Massage" name="" id="" cols="30" rows="8"></textarea>
+            </div>
+            <div class="flex justify-end">
+                <button class="bg-[#DB4444] py-2 px-8 text-white rounded-md">
+                    Send Massage
+                </button>
+              </div>
+        </div>
+      </div>
+      <!-- input section end -->
+    </main>
+    <!-- footer section -->
+    <div class="bg-black py-10">
+      <div
+        class="max-w-5xl mx-auto grid lg:grid-cols-10 md:grid-cols-6 grid-cols-2 md:justify-between gap-5"
+      >
+        <div class="relative space-y-4 col-span-2 mx-auto">
+          <h2 class="text-white font-bold">Exclusive</h2>
+          <p class="text-white">Subscribe</p>
+          <p class="text-white">Get 10% off your first order</p>
+          <input
+            class=" p-2 outline-none bg-black rounded-sm text-white"
+            placeholder="Enter your email"
+            type="text"
+          />
+          <img
+            class="absolute top-28 right-4"
+            src="/assets/telegram.svg"
+            alt=""
+          />
+        </div>
+        <div class="space-y-4 col-span-2 md:mx-auto pl-16 md:pl-0">
+          <h2 class="text-white font-bold">Support</h2>
+          <p class="text-white">
+            111 Bijoy sarani, Dhaka,<br />
+            DH 1515, Bangladesh.
+          </p>
+          <p class="text-white">exclusive@gmail.com</p>
+          <p class="text-white">+88015-88888-9999</p>
+        </div>
+        <div class="space-y-4 col-span-2 md:mx-auto pl-16 md:pl-0">
+          <h2 class="text-white font-bold">Account</h2>
+          <p class="text-white">My Account</p>
+          <p class="text-white">Login / Register</p>
+          <p class="text-white">Cart</p>
+          <p class="text-white">Wishlist</p>
+          <p class="text-white">Shop</p>
+        </div>
+        <div class="space-y-4 col-span-2 md:mx-auto pl-16 md:pl-0">
+          <h2 class="text-white font-bold">Quick Link</h2>
+          <p class="text-white">Privacy Policy</p>
+          <p class="text-white">Terms Of Use</p>
+          <p class="text-white">FAQ</p>
+          <p class="text-white">Contact</p>
+        </div>
+        <div class="space-y-4 col-span-2 mx-auto">
+          <h2 class="text-white font-bold">Download App</h2>
+          <img src="/assets/qrcode.svg" alt="" />
+          <div class="flex gap-6">
+            <img src="/assets/fb.svg" alt="" />
+            <img src="/assets/twit.svg" alt="" />
+            <img src="/assets/instagram.svg" alt="" />
+            <img src="/assets/Linkedin.svg" alt="" />
+          </div>
+        </div>
+      </div>
+      <div class="text-[#7D8184] text-center pt-10">
+        @Copyright Rimel 2022. All right reserved
+      </div>
+    </div>
+    <!-- footer section end -->
+  </body>
+</html>
