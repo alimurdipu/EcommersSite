@@ -35,8 +35,8 @@
           </div>
           <div class="md:w-5.5/12 flex flex-row gap-5 justify-center py-4">
             <a class="hover:underline" href="index.html">Home</a>
-            <a class="hover:underline" href="">Contact</a>
-            <a class="hover:underline" href="">About</a>
+            <a class="underline" href="contact.html">Contact</a>
+            <a class="hover:underline" href="about.html">About</a>
             <a class="hover:underline" href="signup.html">Sign Up</a>
           </div>
           <div class="md:w-4.5/12 flex items-center justify-between">
@@ -54,12 +54,19 @@
                 alt=""
               />
             </div>
-            <a href="whishlist.html"
-              ><img src="/assets/Wishlist.svg" alt=""
+            <a class="group hover:bg-[#DB4444] rounded-full" href="whishlist.html"
+              ><img class="group-hover:hidden" src="/assets/Wishlist.svg" alt=""
+            /><img class="group-hover:block hidden" src="/assets/whiteWishlist.svg" alt=""
             /></a>
-            <a href="cart.html"
-              ><img src="/assets/Cart1withbuy.svg" alt=""
-            /></a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="cart.html">
+              <img class="group-hover:hidden" src="/assets/Cart1withbuy.svg" alt=""/>
+              <img class="group-hover:block hidden" src="/assets/whitecart.svg" alt=""
+            />
+            </a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="account.html">
+              <img class="group-hover:hidden" src="/assets/user.svg" alt="" />
+              <img class="group-hover:block hidden" src="/assets/whiteuser.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -73,7 +80,7 @@
       </div>
       <!-- path end -->
       <!-- input section -->
-      <div class="flex justify-between py-20">
+      <div class="flex md:flex-row flex-col justify-between py-20">
         <div class="w-72 shadow-sm">
             <div class="space-y-4 border-b-2 pb-10">
                 <div class="flex flex-row gap-3 items-center">
@@ -102,7 +109,7 @@
               </div>
         </div>
         <div class="space-y-4 px-10 shadow-sm">
-          <div class="flex flex-row gap-4">
+          <div class="flex md:flex-row flex-col gap-4">
             <div class="w-full ">
               <input
                 class="w-full bg-[#F5F5F5] text-[#7D8184] outline-none px-2 py-1"

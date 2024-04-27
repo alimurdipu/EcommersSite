@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Cart</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -55,12 +55,26 @@
                 alt=""
               />
             </div>
-            <a href="whishlist.html"
-              ><img src="/assets/Wishlist.svg" alt=""
-            /></a>
-            <a href="cart.html"
-              ><img src="/assets/Cart1withbuy.svg" alt=""
-            /></a>
+            <a class="group hover:bg-[#DB4444] rounded-full relative" href="whishlist.html"
+              ><img class="group-hover:hidden" src="/assets/Wishlist.svg" alt=""
+            /><img class="group-hover:block hidden" src="/assets/whiteWishlist.svg" alt=""
+            />
+            <div class="w-4 h-4 bg-[#DB4444] rounded-full flex justify-center items-center text-white absolute -top-1 right-0">
+              <p>4</p>
+            </div>
+          </a>
+            <a class="group hover:bg-[#DB4444] rounded-full relative" href="cart.html">
+              <img class="group-hover:hidden" src="/assets/Cart1withbuy.svg" alt=""/>
+              <img class="group-hover:block hidden" src="/assets/whitecart.svg" alt=""
+            />
+            <div class="w-4 h-4 bg-[#DB4444] rounded-full flex justify-center items-center text-white absolute -top-1 right-0">
+              <p>2</p>
+            </div>
+            </a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="account.html">
+              <img class="group-hover:hidden" src="/assets/user.svg" alt="" />
+              <img class="group-hover:block hidden" src="/assets/whiteuser.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -86,9 +100,12 @@
           <p>Subtotal</p>
         </div>
         <div class="md:grid grid-cols-4 font-bold shadow-sm p-4">
-          <div class="flex flex-row items-center justify-start gap-2">
+          <div class="flex flex-row items-center justify-start gap-2 relative">
             <img class="h-10 w-10" src="/assets/monitor.svg" alt="" />
             <p>LCD Monitor</p>
+            <div class="w-4 h-4 bg-[#DB4444] rounded-full flex justify-center items-center text-white absolute -top-1 -left-2">
+              <p>x</p>
+            </div>
           </div>
           <p>$650</p>
           <div

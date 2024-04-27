@@ -35,8 +35,8 @@
           </div>
           <div class="md:w-5.5/12 flex flex-row gap-5 justify-center py-4">
             <a class="hover:underline" href="index.html">Home</a>
-            <a class="hover:underline" href="">Contact</a>
-            <a class="hover:underline" href="">About</a>
+            <a class="hover:underline" href="contact.html">Contact</a>
+            <a class="hover:underline" href="about.html">About</a>
             <a class="hover:underline" href="signup.html">Sign Up</a>
           </div>
           <div class="md:w-4.5/12 flex items-center justify-between">
@@ -54,12 +54,18 @@
                 alt=""
               />
             </div>
-            <a href="whishlist.html"
-              ><img src="/assets/Wishlist.svg" alt=""
+            <a class="group hover:bg-[#DB4444] rounded-full" href="whishlist.html"
+              ><img class="group-hover:hidden" src="/assets/Wishlist.svg" alt=""
+            /><img class="group-hover:block hidden" src="/assets/whiteWishlist.svg" alt=""
             /></a>
-            <a href="cart.html"
-              ><img src="/assets/Cart1withbuy.svg" alt=""
-            /></a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="cart.html">
+              <img class="group-hover:hidden" src="/assets/Cart1withbuy.svg" alt=""/>
+              <img class="group-hover:block hidden" src="/assets/whitecart.svg" alt=""
+            />
+            </a>
+            <a class="group bg-[#DB4444] rounded-full" href="account.html">
+              <img class="" src="/assets/whiteuser.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -74,14 +80,14 @@
       </div>
       <!-- path end -->
       <!-- input section -->
-      <div class="flex justify-between items-center py-20">
+      <div class="flex md:flex-row flex-col justify-between items-center py-20">
         <div class="w-full">
             <ul class="space-y-3">
               <li class="">
                 <p class="font-bold">Manage My Account</p>
               </li>
               <div class="pl-6">
-                <button class="hover:text-[#DB4444] text-[#7D8184]">My Profile</button>
+                <button class="text-[#DB4444]">My Profile</button>
               <li class="hover:text-[#DB4444] text-[#7D8184] cursor-pointer">Address Book</li>
               <li class="hover:text-[#DB4444] text-[#7D8184] cursor-pointer">My Payment Options</li>
               </div>
@@ -94,6 +100,7 @@
             </ul>
           </div>
         <div class="space-y-4 pr-14  w-full">
+          <p class="font-bold text-[#DB4444]">Edit Your Profile</p>
           <div class="flex flex-row gap-4">
             <div class="w-full ">
               <p class="font-semibold">
@@ -173,8 +180,15 @@
               placeholder="Confirm New Passwod"
             />
           </div>
+          <div class="flex justify-end items-center gap-4">
+            <button>Cancel</button>
+            <button class="bg-[#DB4444] py-2 px-8 text-white rounded-md">
+              Save Changes
+            </button>
+          </div>
         </div>
       </div>
+      
       <!-- input section end -->
     </main>
     <!-- footer section -->

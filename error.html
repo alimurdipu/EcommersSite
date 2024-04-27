@@ -54,12 +54,19 @@
                 alt=""
               />
             </div>
-            <a href="whishlist.html"
-              ><img src="/assets/Wishlist.svg" alt=""
+            <a class="group hover:bg-[#DB4444] rounded-full" href="whishlist.html"
+              ><img class="group-hover:hidden" src="/assets/Wishlist.svg" alt=""
+            /><img class="group-hover:block hidden" src="/assets/whiteWishlist.svg" alt=""
             /></a>
-            <a href="cart.html"
-              ><img src="/assets/Cart1withbuy.svg" alt=""
-            /></a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="cart.html">
+              <img class="group-hover:hidden" src="/assets/Cart1withbuy.svg" alt=""/>
+              <img class="group-hover:block hidden" src="/assets/whitecart.svg" alt=""
+            />
+            </a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="account.html">
+              <img class="group-hover:hidden" src="/assets/user.svg" alt="" />
+              <img class="group-hover:block hidden" src="/assets/whiteuser.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -74,8 +81,8 @@
       <!-- path end -->
       <!-- input section -->
       <div class="flex flex-col items-center space-y-5 py-20">
-        <h1 class="text-7xl font-semibold">404 Not Found</h1>
-        <p class="text-sm">Your visited page not found. You may go home page.</p>
+        <h1 class="md:text-7xl text-4xl font-semibold">404 Not Found</h1>
+        <p class="md:text-sm text-[10px]">Your visited page not found. You may go home page.</p>
         <div class="flex justify-center pt-10">
             <a href="index.html" class="bg-[#DB4444] py-2 px-8 text-white rounded-md">
                 Back to home page

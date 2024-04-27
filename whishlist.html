@@ -3,7 +3,7 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Sign Up</title>
+    <title>Wishlist</title>
     <script src="https://cdn.tailwindcss.com"></script>
   </head>
   <body>
@@ -55,12 +55,23 @@
                 alt=""
               />
             </div>
-            <a href="whishlist.html"
-              ><img src="/assets/Wishlist.svg" alt=""
-            /></a>
-            <a href="cart.html"
-              ><img src="/assets/Cart1withbuy.svg" alt=""
-            /></a>
+            <a class="group hover:bg-[#DB4444] rounded-full relative" href="whishlist.html"
+              ><img class="group-hover:hidden" src="/assets/Wishlist.svg" alt=""
+            /><img class="group-hover:block hidden" src="/assets/whiteWishlist.svg" alt=""
+            />
+            <div class="w-4 h-4 bg-[#DB4444] rounded-full flex justify-center items-center text-white absolute -top-1 right-0">
+              <p>4</p>
+            </div>
+          </a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="cart.html">
+              <img class="group-hover:hidden" src="/assets/Cart1withbuy.svg" alt=""/>
+              <img class="group-hover:block hidden" src="/assets/whitecart.svg" alt=""
+            />
+            </a>
+            <a class="group hover:bg-[#DB4444] rounded-full" href="account.html">
+              <img class="group-hover:hidden" src="/assets/user.svg" alt="" />
+              <img class="group-hover:block hidden" src="/assets/whiteuser.svg" alt="" />
+            </a>
           </div>
         </div>
       </div>
@@ -100,7 +111,7 @@
             <h2 class="font-bold">Gucci duffle bag</h2>
             <div class="flex gap-4">
               <p class="text-[#DB4444]">$960</p>
-              <p class="text-[#7D8184]">$1160</p>
+              <p class="text-[#7D8184] line-through">$1160</p>
             </div>
           </div>
         </div>
@@ -201,7 +212,7 @@
               <h2 class="font-bold">ASUS FHD Gaming Laptop</h2>
               <div class="flex gap-4">
                 <p class="text-[#DB4444]">$960</p>
-                <p class="text-[#7D8184]">$1160</p>
+                <p class="text-[#7D8184] line-through">$1160</p>
               </div>
               <div class="flex">
                 <img src="/assets/Fivestar.svg" alt="" />
