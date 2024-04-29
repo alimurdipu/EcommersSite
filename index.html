@@ -5,6 +5,9 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Ecommers</title>
     <script src="https://cdn.tailwindcss.com"></script>
+    <!-- slick css -->
+    <link rel="stylesheet" href="slick/slick.css" />
+    <link rel="stylesheet" href="slick/slick-theme.css" />
   </head>
   <body>
     <!-- top header -->
@@ -55,18 +58,39 @@
                 alt=""
               />
             </div>
-            <a class="group hover:bg-[#DB4444] rounded-full" href="whishlist.html"
-              ><img class="group-hover:hidden" src="/assets/Wishlist.svg" alt=""
-            /><img class="group-hover:block hidden" src="/assets/whiteWishlist.svg" alt=""
+            <a
+              class="group hover:bg-[#DB4444] rounded-full"
+              href="whishlist.html"
+              ><img
+                class="group-hover:hidden"
+                src="/assets/Wishlist.svg"
+                alt="" /><img
+                class="group-hover:block hidden"
+                src="/assets/whiteWishlist.svg"
+                alt=""
             /></a>
             <a class="group hover:bg-[#DB4444] rounded-full" href="cart.html">
-              <img class="group-hover:hidden" src="/assets/Cart1withbuy.svg" alt=""/>
-              <img class="group-hover:block hidden" src="/assets/whitecart.svg" alt=""
-            />
+              <img
+                class="group-hover:hidden"
+                src="/assets/Cart1withbuy.svg"
+                alt=""
+              />
+              <img
+                class="group-hover:block hidden"
+                src="/assets/whitecart.svg"
+                alt=""
+              />
             </a>
-            <a class="group hover:bg-[#DB4444] rounded-full" href="account.html">
+            <a
+              class="group hover:bg-[#DB4444] rounded-full"
+              href="account.html"
+            >
               <img class="group-hover:hidden" src="/assets/user.svg" alt="" />
-              <img class="group-hover:block hidden" src="/assets/whiteuser.svg" alt="" />
+              <img
+                class="group-hover:block hidden"
+                src="/assets/whiteuser.svg"
+                alt=""
+              />
             </a>
           </div>
         </div>
@@ -170,14 +194,14 @@
             </div>
           </div>
           <div class="flex gap-2">
-            <button><img src="/assets/FillWithLeftArrow.svg" alt="" /></button>
-            <button><img src="/assets/FillwithRightArrow.svg" alt="" /></button>
+            <button class="previous"><img class="" src="/assets/FillWithLeftArrow.svg" alt="" /></button>
+            <button class="next"><img src="/assets/FillwithRightArrow.svg" alt="" /></button>
           </div>
         </div>
       </div>
       <!-- section header -->
       <!-- flash sales -->
-      <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4">
+      <div class="item-container gap-4">
         <a href="gamepad.html" class="mx-auto">
           <div class="group bg-[#F5F5F5] w-60 h-64 relative cursor-pointer">
             <div class="flex items-center justify-center">
@@ -270,6 +294,38 @@
             </div>
             <div class="flex">
               <img src="/assets/Fivestar.svg" alt="" />
+              <p class="text-[#7D8184]">(99)</p>
+            </div>
+          </div>
+        </div>
+        <div class="mx-auto">
+          <div class="group bg-[#F5F5F5] w-60 h-64 relative cursor-pointer">
+            <div class="flex items-center justify-center">
+              <img class="pt-16" src="/assets/laptop.svg" alt="" />
+            </div>
+            <div
+              class="absolute top-4 left-2 px-2 bg-[#DB4444] w-14 rounded-sm"
+            >
+              <p class="text-white">-25%</p>
+            </div>
+            <div class="absolute top-4 right-2 gap-2 flex flex-col">
+              <img src="/assets/FillHeart.svg" alt="" />
+              <img src="/assets/FillEye.svg" alt="" />
+            </div>
+            <button
+              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+            >
+              <p class="text-white text-center">Add To Cart</p>
+            </button>
+          </div>
+          <div class="pt-2">
+            <h2 class="font-bold">ASUS FHD Gaming Laptop</h2>
+            <div class="flex gap-4">
+              <p class="text-[#DB4444]">$375</p>
+              <p class="text-[#7D8184] line-through">$400</p>
+            </div>
+            <div class="flex">
+              <img src="/assets/FourHalfStar.svg" alt="" />
               <p class="text-[#7D8184]">(99)</p>
             </div>
           </div>
@@ -378,8 +434,16 @@
           <div
             class="group border-2 rounded-md flex flex-col justify-center items-center w-36 h-32 cursor-pointer hover:text-white hover:bg-[#DB4444] mx-auto"
           >
-            <img class="group-hover:hidden" src="/assets/blackcamera.svg" alt="" />
-            <img class="group-hover:block hidden" src="/assets/Camera.svg" alt="" />
+            <img
+              class="group-hover:hidden"
+              src="/assets/blackcamera.svg"
+              alt=""
+            />
+            <img
+              class="group-hover:block hidden"
+              src="/assets/Camera.svg"
+              alt=""
+            />
             <p>Camera</p>
           </div>
           <div
@@ -431,7 +495,7 @@
         </div>
         <div class="grid lg:grid-cols-4 md:grid-cols-2 grid-cols-1 gap-4 pt-10">
           <div class="mx-auto">
-            <div class="bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
+            <div class="group bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
               <div class="flex items-center justify-center">
                 <img class="pt-8" src="/assets/rainycoat.svg" alt="" />
               </div>
@@ -439,6 +503,11 @@
                 <img src="/assets/FillHeart.svg" alt="" />
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
+              <button
+                  class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+                >
+                  <p class="text-white text-center">Add To Cart</p>
+                </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">The north coat</h2>
@@ -453,7 +522,7 @@
             </div>
           </div>
           <div class="mx-auto">
-            <div class="bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
+            <div class="group bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
               <div class="flex items-center justify-center">
                 <img class="pt-8" src="/assets/gucciBag.svg" alt="" />
               </div>
@@ -461,6 +530,11 @@
                 <img src="/assets/FillHeart.svg" alt="" />
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
+              <button
+                  class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+                >
+                  <p class="text-white text-center">Add To Cart</p>
+                </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Gucci duffle bag</h2>
@@ -475,7 +549,7 @@
             </div>
           </div>
           <div class="mx-auto">
-            <div class="bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
+            <div class="group bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
               <div class="flex items-center justify-center">
                 <img class="pt-8" src="/assets/speaker.svg" alt="" />
               </div>
@@ -483,6 +557,11 @@
                 <img src="/assets/FillHeart.svg" alt="" />
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
+              <button
+                  class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+                >
+                  <p class="text-white text-center">Add To Cart</p>
+                </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">RGB liquid CPU Cooler</h2>
@@ -497,7 +576,7 @@
             </div>
           </div>
           <div class="mx-auto">
-            <div class="bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
+            <div class="group bg-[#F5F5F5] w-60 h-60 relative cursor-pointer">
               <div class="flex items-center justify-center">
                 <img class="pt-8" src="/assets/bookReck.svg" alt="" />
               </div>
@@ -505,6 +584,11 @@
                 <img src="/assets/FillHeart.svg" alt="" />
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
+              <button
+                  class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+                >
+                  <p class="text-white text-center">Add To Cart</p>
+                </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Small BookSelf</h2>
@@ -595,10 +679,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Breed Dry Dog Food</h2>
@@ -621,10 +705,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-9">
               <h2 class="font-bold">CANON EOS DSLR Camera</h2>
@@ -647,10 +731,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">ASUS FHD Gaming Laptop</h2>
@@ -673,10 +757,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Curology Product Set</h2>
@@ -704,10 +788,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Kids Electric Car</h2>
@@ -736,10 +820,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Jr. Zoom Soccer Cleats</h2>
@@ -773,10 +857,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Kids Electric Car</h2>
@@ -805,10 +889,10 @@
                 <img src="/assets/FillEye.svg" alt="" />
               </div>
               <button
-              class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
-            >
-              <p class="text-white text-center">Add To Cart</p>
-            </button>
+                class="group-hover:block hidden bg-black py-1 rounded-b-sm absolute w-full bottom-1"
+              >
+                <p class="text-white text-center">Add To Cart</p>
+              </button>
             </div>
             <div class="pt-4">
               <h2 class="font-bold">Quilted Satin Jacket</h2>
@@ -1004,5 +1088,17 @@
       </div>
     </div>
     <!-- footer section end -->
+
+    <!-- slick jquery -->
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-1.11.0.min.js"
+    ></script>
+    <script
+      type="text/javascript"
+      src="https://code.jquery.com/jquery-migrate-1.2.1.min.js"
+    ></script>
+    <script type="text/javascript" src="slick/slick.min.js"></script>
+    <script src="slick/script.js"></script>
   </body>
 </html>

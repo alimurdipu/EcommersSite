@@ -90,43 +90,48 @@
       </div>
       <!-- path end -->
       <!-- table section -->
-      <div class="">
+      <div class="flex flex-col gap-6">
         <div
-          class="md:grid grid-cols-4 justify-between font-bold shadow-sm p-4"
+          class="md:grid grid-cols-4 justify-between font-bold shadow-sm border p-4"
         >
           <p>Product</p>
           <p>Price</p>
           <p>Quantity</p>
           <p>Subtotal</p>
         </div>
-        <div class="md:grid grid-cols-4 font-bold shadow-sm p-4">
+        <div class="group cursor-pointer md:grid grid-cols-4 font-bold shadow-sm p-4 border">
           <div class="flex flex-row items-center justify-start gap-2 relative">
             <img class="h-10 w-10" src="/assets/monitor.svg" alt="" />
             <p>LCD Monitor</p>
-            <div class="w-4 h-4 bg-[#DB4444] rounded-full flex justify-center items-center text-white absolute -top-1 -left-2">
-              <p>x</p>
+            <div class="group-hover:block hidden text-white absolute -top-1 -left-2">
+              <div class="w-4 h-4 rounded-full flex justify-center items-end bg-[#DB4444]">
+                <p>x</p>
+              </div>
             </div>
           </div>
           <p>$650</p>
           <div
             class="w-20 flex flex-row justify-center items-center border-2 rounded-md px-2 gap-2"
           >
-            <p>01</p>
-            <img src="/assets/updown.svg" alt="" />
+          <input class="outline-none text-center" type="number" id="quantity" name="quantity" min="1" max="100">
           </div>
           <p>$650</p>
         </div>
-        <div class="md:grid grid-cols-4 font-bold p-4 shadow-sm">
-          <div class="flex flex-row items-center gap-2">
+        <div class="group md:grid grid-cols-4 font-bold p-4 shadow-sm border cursor-pointer">
+          <div class="flex flex-row items-center gap-2 relative">
             <img class="h-10 w-10" src="/assets/joystick.svg" alt="" />
             <p>H1 Gamepad</p>
+            <div class="group-hover:block hidden text-white absolute -top-1 -left-2">
+              <div class="w-4 h-4 rounded-full flex justify-center items-end bg-[#DB4444]">
+                <p>x</p>
+              </div>
+            </div>
           </div>
           <p>$550</p>
           <div
             class="w-20 flex flex-row justify-center items-center border-2 rounded-md px-2 gap-2"
           >
-            <p>02</p>
-            <img src="/assets/updown.svg" alt="" />
+          <input class="outline-none text-center" type="number" id="quantity" name="quantity" min="01" max="100">
           </div>
           <p>$1100</p>
         </div>
