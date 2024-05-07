@@ -32,18 +32,21 @@
     <div class="border-b">
       <div class="max-w-5xl mx-auto">
         <div
-          class="flex md:flex-row flex-col justify-between items-center border-b"
+          class="flex flex-row justify-between items-center border-b"
         >
+        <!-- navbar left -->
           <div class="md:w-2/12">
             <h2 class="text-xl font-bold">Exclusive</h2>
           </div>
-          <div class="md:w-5.5/12 flex flex-row gap-5 justify-center py-4">
+          <!-- navbar middle -->
+          <div class="md:w-5.5/12 hidden md:flex flex-row gap-5 justify-center py-4">
             <a class="underline" href="index.html">Home</a>
             <a class="hover:underline" href="contact.html">Contact</a>
             <a class="hover:underline" href="about.html">About</a>
             <a class="hover:underline" href="signup.html">Sign Up</a>
           </div>
-          <div class="md:w-4.5/12 flex items-center justify-between">
+          <!-- navbar right -->
+          <div class="md:w-4.5/12 hidden md:flex items-center justify-between">
             <div class="flex relative">
               <input
                 class="lg:w-72 md:w-56 w-56 bg-gray-100 rounded-md md:p-2 p-1 outline-none"
@@ -92,6 +95,33 @@
                 alt=""
               />
             </a>
+          </div>
+          <!-- mobile menu -->
+          <div class="block md:hidden">
+            <img id="hamurgerMenu" class="w-5" src="/assets/Hamburger.svg.png" alt="">
+          </div>
+          <!-- mobile navigation -->
+          <div id="mobileNav" class="hidden">
+            <div class="w-10/12 z-20 bg-white fixed inset-y-0 left-0 border-2 border-red-500">
+              <div class="flex p-2">
+                <input
+                  class="bg-gray-100 rounded-md p-4 w-full outline-none"
+                  type="text"
+                  placeholder="What are you looking for?"
+                  name=""
+                  id=""
+                />
+              </div>
+              <div class="md:w-5.5/12 flex flex-col gap-5 justify-center p-2">
+                <a class="py-4 font-medium hover:bg-slate-300 bg-slate-300 pl-2" href="index.html">Home</a>
+                <a class="py-4 font-medium hover:bg-slate-300 pl-2" href="contact.html">Contact</a>
+                <a class="py-4 font-medium hover:bg-slate-300 pl-2" href="about.html">About</a>
+                <a class="py-4 font-medium hover:bg-slate-300 pl-2" href="signup.html">Sign Up</a>
+              </div>
+            </div>
+            <div id="blackMenu" class="w-full bg-black/20 fixed inset-y-0 left-0">
+
+            </div>
           </div>
         </div>
       </div>

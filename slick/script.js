@@ -9,4 +9,15 @@ $(document).ready(function(){
     nextArrow: ".next"
     });
   });
-      
+
+  const hamurgerMenu = document.getElementById("hamurgerMenu");
+  const mobileNav = document.getElementById("mobileNav");
+  const blackMenu = document.getElementById("blackMenu")
+
+  hamurgerMenu.addEventListener("click", function() {
+    mobileNav.style.display = "block"
+  });
+
+  blackMenu.addEventListener("click", function(){
+    mobileNav.style.removeProperty("display")
+  })
